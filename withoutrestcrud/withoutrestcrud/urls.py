@@ -19,6 +19,7 @@ from testapp import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api/(?P<id>\d+)/$',views.EmployeeDetailsCBV.as_view()),
-    url(r'^api/$',views.EmployeeListCBV.as_view()),
+   # url(r'^api/$',views.EmployeeListCBV.as_view()),
+    url(r'^api/$',views.EmployeeCRUDCBV.as_view()),
 
 ]
